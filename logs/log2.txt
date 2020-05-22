@@ -1,0 +1,25 @@
+Not found in Database wiki_db: hisdos (raw), tried: hisdos (normalized). Found instead: []. Maybe need to add another normalization rule.
+Warning: in word agisiþō, ignoring line: ** {{desc|fro|hisdos|bor=1|unc=1}}, {{desctree|fro|hideus|notext=1|bor=1}}, further template not link
+Warning: in word agisōną, ignoring line: *** {{desc|en|ey}} {{i|rare, Northern English, Scotland}}, final case in desc template handler
+Warning: in word agisōną, ignoring line: *** {{desc|en|ey}} {{i|rare, Northern English, Scotland}}, final case in desc template handler
+Not found in Database wiki_db: *ahslu (raw), tried: Reconstruction:Proto-West Germanic/ahslu (normalized). Found instead: []. Maybe need to add another normalization rule.
+Not found in Database wiki_db: *ahsu (raw), tried: Reconstruction:Proto-West Germanic/ahsu (normalized). Found instead: []. Maybe need to add another normalization rule.
+Warning: in word ahtō, ignoring line: * {{desc|ang|eaht}}, [[æht]], final case in desc template handler
+Warning: in word ahtō, ignoring line: ** {{desc|enm|aught}}, [[aut]], final case in desc template handler
+Warning: In word ahtudô, ignoring line: ** Westphalian:, but adding dummy node so the tree connects correctly (for example for 'Westphalian' line that appears often.
+Warning: in word ahwō, ignoring line: ** {{desc|de|Ach}}, {{l|de|Ache}} {{q|obsolete or dialectal, chiefly in toponyms}}, final case in desc template handler
+Warning: in word á, ignoring line: * Faroese: {{l|fo|á}} {{qualifier|archaic, poetic}}, final case in desc template handler
+Warning: in word á, ignoring line: -->, firstSplit too short (so no whitespace)
+Warning: In word ēkhorn, ignoring line: ** Westphalian:, but adding dummy node so the tree connects correctly (for example for 'Westphalian' line that appears often.
+Not found in Database wiki_db: *ēcorno (raw), tried: Reconstruction:Old Dutch/ēcorno (normalized). Found instead: [Reconstruction:Old Dutch/ecorno]. Maybe need to add another normalization rule.
+Warning: in word íkorni, ignoring line: ** {{desc|sv|ekorre}}, {{q|dialectal}} {{l|sv|ikorn}}, further template not link
+Warning: in word ainahandijaz, ignoring line: ***German: {{l|gmh|einhändig}}, line does not begin with just '*'s or ':'s.
+Warning: in word elleven, ignoring line: * {{desc|sco|eleiven}}, {{l|sco|eleeven}} {{q|obsolete {{m|sco|ane-levin}}, {{m|sco|alevin}}, {{m|sco|ellevin}}, {{m|sco|elevin}}, {{m|sco|levin}}}}, further template not link
+Warning: In word ellevan, ignoring line: *** Westphalian:, but adding dummy node so the tree connects correctly (for example for 'Westphalian' line that appears often.
+Warning: In word ēn, ignoring line: *** Westphalian:, but adding dummy node so the tree connects correctly (for example for 'Westphalian' line that appears often.
+Warning: in word einn, ignoring line: {{top2}}, firstSplit too short (so no whitespace)
+Warning: in word einn, ignoring line: {{bottom}}, firstSplit too short (so no whitespace)
+Warning: in word airi, ignoring line: *** {{desc|gmq-osw|aarla}}, {{l|sv|arla}}<ref>{{R:svenska.se|saob}}</ref>, differing languages in list
+Warning: in word airidagaz, ignoring line: * {{desc|goh|ērtagīg|t=of yesterday, before dawn|pos=adjective}}, final case in desc template handler
+Not found in Database wiki_db: ǣresta (raw), tried: æresta (normalized). Found instead: []. Maybe need to add another normalization rule.
+Warning: In word ērist, ignoring line: * {{desc|gmh}}, but adding dummy node so the tree connects correctly (for example for 'Westphalian' line that appears often.
