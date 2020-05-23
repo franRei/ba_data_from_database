@@ -14,8 +14,8 @@ public class DescendantsParser {
 
     public DescendantsParser() {
         results = new ArrayList<DescTree>();
-        String user = "franzi";
-        String pw = "password";
+        String user = "user_name_here";
+        String pw = "password_here";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proto?useUnicode=true&characterEncoding=UTF-8&useSSL=false&" +
@@ -40,7 +40,6 @@ public class DescendantsParser {
     public void run() throws IOException{
         int count=1;
         String query_proto_germanic = "SELECT * FROM proto_germanic_01_01 order by g_word";
-        //String query_proto_germanic = "SELECT * FROM proto_germanic_01_01";
         try{
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query_proto_germanic);
@@ -195,8 +194,6 @@ public class DescendantsParser {
         System.out.println("Word: "+ word + ", language: "+ language);
         ArrayList<DescTree> levels = new ArrayList<DescTree>();
 
-
-
         try{
             DescTree result = new DescTree(word, language);
             if(borrowed) result.setBorrowed();
@@ -236,24 +233,19 @@ public class DescendantsParser {
 
                 Pattern template = Pattern.compile("\\{\\{([^}]*)\\}\\}");
                 Matcher matcher = template.matcher(firstSplit[1]);
-
-                boolean foundSomething = false; //this we use below to see whether we had an empty line with no relevant templates.
+                
+                //this we use below to see whether we had an empty line with no relevant templates.
+                boolean foundSomething = false;
 
 
                 while(matcher.find()){
                     //here matcher.group(1) is the inner part of {{...}} and runs over all of them
-
                     boolean newBorrowed = borrowed;
 
                     String[] template_List = matcher.group(1).split("\\|");
 
-                    //List<String> templateList = new ArrayList<String>();
                     List<String> templateList = Arrays.asList(template_List);
-                    //System.out.println(templateList.get(0));
-                    /*for(String text : template_List) {
-                        templateList.add(text);
-                    }*/
-                    // ArrayList<String> templateList = Array.asList(template_List);
+
                     //now templateList contains a list of all the arguments of the template, which were separated by "|"
                     ArrayList<String> withoutOptions = new ArrayList<String>();
                     //we want to fill withoutOptions with all the ones that are not bor=1 etc
@@ -361,8 +353,8 @@ public class DescendantsParser {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query_allwords);
 
-            //hier enthält ResultSet manchmal nichts (z.B. wenn wir das ascii mapping verbockt haben), in dem Fall loggen.
-            //Manchmal enthält es auch zu viele Einträge, weil SQL selbst scheinbar nicht case-sensitive sucht und selbst irgendwie zu ascii normalisiert.
+            //sometimes ResultSet empty (e.g. ascii mapping is wrong), in this case log
+            //sometimes it containse to many entries, as SQL ignores case-sensitive
             boolean found = false;
             String description="";
             ArrayList<String> words = new ArrayList<String>();
@@ -389,7 +381,6 @@ public class DescendantsParser {
                 }
                 String descendants[] = cut3[1].split("\\r?\\n=");//takes everything up to the next line starting with an '=', or the rest of the file. Hopefully this covers all cases.
                 String desc = descendants[0];
-               // System.out.println(" ANFANG: " + desc +  " ENDE");
                 DescTree result = parseDescendants(raw_word, language, desc, borrowed);
                 return result;
             }
