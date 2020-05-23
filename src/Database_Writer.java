@@ -6,19 +6,13 @@ public class Database_Writer {
 
 
     public static void open_Database() {
-        String user = "franzi";
-        String pw = "password";
+        String user = "user_name_here";
+        String pw = "password_here";
         int synEx = 0;
+        //sql table here
         String tablename = "wiki";
-
-
-//        System.out.println(description);
-/*
-        String esquel = "INSERT INTO " + tablename + " ( wiki_word, wiki_description ) "
-                + " VALUES ( '" + word +  "','" + description + "');";*/
+        //other sql table here
         String esquel = "SELECT * FROM proto_germanic";
-
-
 
         try
         {
@@ -45,8 +39,6 @@ public class Database_Writer {
         }
         catch (SQLException ex)           {System.err.println(ex.getMessage());}
         finally {
-
         }
     }
-
 }
