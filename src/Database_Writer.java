@@ -32,8 +32,6 @@ public class Database_Writer {
             conn.close();
         }
         catch (ClassNotFoundException ex) {System.err.println(ex.getMessage());}
-       // catch (IllegalAccessException ex) {System.err.println(ex.getMessage());}
-        //catch (InstantiationException ex) {System.err.println(ex.getMessage());}
         catch (MySQLSyntaxErrorException e) {
             System.out.println("SyntaxException: " + synEx++);
         }
