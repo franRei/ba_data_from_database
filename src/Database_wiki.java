@@ -4,10 +4,10 @@ import java.sql.*;
 
 public class Database_wiki {
     public static void open_Database(String word_to_search) {
-        String user = "franzi";
-        String pw = "password";
+        String user = "user_name_here";
+        String pw = "password_here";
+        //full wiki db here
         String tablename = "wiki";
-
         String esquel = "SELECT * FROM " + tablename +  " WHERE wiki_word = " + word_to_search;
 
         try
@@ -30,7 +30,6 @@ public class Database_wiki {
         catch (ClassNotFoundException ex) {System.err.println(ex.getMessage());}
         catch (SQLException ex)           {System.err.println(ex.getMessage());}
         finally {
-
         }
     }
 }
