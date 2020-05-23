@@ -6,17 +6,6 @@ public class Searcher {
         String[] lines = description.split("line.separator");
         for(String line : lines){
             if(line.contains("{{desctree")) {
-                /*String[] line2 = line.split("\\|");
-
-                if(line2[line2.length-1].matches(".*\\d.*")){
-                    System.out.println(line2[line2.length-2]);
-                    return line2[line2.length-2];
-                }
-                else {
-                    System.out.println(line2[line2.length-1]);
-                    return line2[line2.length-1];
-                }*/
-
                 String subString = line.substring(line.indexOf("{{desctree"),line.indexOf("}}",line.indexOf("{{desctree"))+2);
                 System.out.println(subString);
                 String newSub = subString.substring(subString.lastIndexOf("|")+1,subString.length()-2);
@@ -48,6 +37,4 @@ public class Searcher {
             }
         return "false";
     }
-
-
 }
