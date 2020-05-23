@@ -4,14 +4,14 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class Database_pgermanic {
-
         public static ArrayList<String> open_Database() {
-            String user = "franzi";
-            String pw = "password";
+            String user = "user_name_here";
+            String pw = "password_here";
             int synEx = 0;
             int count_this = 0;
             Searcher search = new Searcher();
             ArrayList<String> data = new ArrayList<>();
+            //table name here
             String tablename = "proto_germanic_01_01";
             Database_wiki wiki_search = new Database_wiki();
 
@@ -51,17 +51,12 @@ public class Database_pgermanic {
                                 }
                             }
                         }
-                        //wiki_search.open_Database(subDesctree);
-
                     }
-
                 }
                 st.close();
                 conn.close();
             }
             catch (ClassNotFoundException ex) {System.err.println(ex.getMessage());}
-            // catch (IllegalAccessException ex) {System.err.println(ex.getMessage());}
-            //catch (InstantiationException ex) {System.err.println(ex.getMessage());}
             catch (MySQLSyntaxErrorException e) {
                 System.out.println("SyntaxException: " + synEx++);
             }
@@ -71,6 +66,5 @@ public class Database_pgermanic {
             }
             return data;
         }
-
 }
 
